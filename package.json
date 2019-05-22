@@ -3,9 +3,10 @@
   "version": "0.0.8",
   "description": "some common component for moyu.",
   "main": "lib/**",
-  "module": "es/index.js",
+  "module": "es/**",
   "files": [
-    "dist"
+    "es",
+    "lib"
   ],
   "authors": {
     "name": "panqingyi",

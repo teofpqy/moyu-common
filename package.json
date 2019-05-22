@@ -2,8 +2,8 @@
   "name": "moyu-common",
   "version": "0.0.5",
   "description": "some common component for moyu.",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "files": [
     "dist"
   ],

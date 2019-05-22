@@ -1,6 +1,6 @@
 {
   "name": "moyu-common",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "some common component for moyu.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

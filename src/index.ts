@@ -1,5 +1,1 @@
-import Content from '@/components/Content';
-
-export default {
-  Content,
-};
+export { default as Content } from '@/components/Content';

@@ -1,9 +1,12 @@
 {
   "name": "moyu-common",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "some common component for moyu.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
   "authors": {
     "name": "panqingyi",
     "email": "teofpqy@outlook.com"

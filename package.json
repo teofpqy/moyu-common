@@ -1,0 +1,26 @@
+{
+  "name": "moyu-common",
+  "version": "0.0.2",
+  "description": "some common component for moyu.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "panqingyi",
+    "email": "teofpqy@outlook.com"
+  },
+  "repository": "https://github.com/teofpqy/moyu-common.git",
+  "scripts": {
+    "dev": "umi-lib doc dev",
+    "build": "umi-lib build",
+    "pub": "yarn publish"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.18",
+    "typescript": "^3.3.3",
+    "umi-library": "^1.1.1"
+  },
+  "license": "MIT"
+}

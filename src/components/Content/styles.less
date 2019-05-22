@@ -11,7 +11,7 @@
 
 :global {
   .content {
-    p {
+    &-text {
       text-indent: 2rem;
       text-align: left;
     }
@@ -20,6 +20,18 @@
       color: #666;
       display: flex;
       align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 13px 0;
+
+      &::before {
+        content: '';
+        .iconDefault();
+        margin-right: 10px;
+        width: 8px;
+        height: 17px;
+        background-image: url('~@/assets/icons/h3-title-icon.png');
+      }
     }
 
     &-table {
@@ -96,9 +108,9 @@
           content: '';
           .iconDefault();
           margin: auto 10px;
-          width: 8px;
-          height: 17px;
-          background-image: url('./icons/content-titlt-icon.png');
+          width: 7px;
+          height: 13px;
+          background-image: url('~@/assets/icons/h4-title-icon.png');
         }
 
         &::after {
@@ -109,7 +121,7 @@
           height: 6.6px;
           float: right;
           transform: rotate(-90deg);
-          background-image: url('./icons/content-point-sort-icon.png');
+          background-image: url('~@/assets/icons/content-point-sort-icon.png');
         }
       }
 
@@ -122,9 +134,9 @@
           content: '';
           .iconDefault();
           margin: auto 10px;
-          width: 8px;
-          height: 17px;
-          background-image: url('./icons/content-titlt-icon-expand.png');
+          width: 7px;
+          height: 13px;
+          background-image: url('~@/assets/icons/h4-title-icon-expand.png');
         }
 
         &::after {
@@ -134,7 +146,7 @@
           width: 12px;
           height: 6.6px;
           float: right;
-          background-image: url('./icons/content-point-sort-icon.png');
+          background-image: url('~@/assets/icons/content-point-sort-icon.png');
         }
       }
     }
@@ -162,7 +174,7 @@
           margin: auto 7px auto 4px;
           width: 13px;
           height: 13px;
-          background-image: url('./icons/iconp.png');
+          background-image: url('~@/assets/icons/iconp.png');
         }
 
         &::after {
@@ -173,7 +185,7 @@
           margin: auto 0 auto auto;
           float: right;
           transform: rotate(-90deg);
-          background-image: url('./icons/content-point-sort-icon.png');
+          background-image: url('~@/assets/icons/content-point-sort-icon.png');
         }
       }
 
@@ -186,7 +198,7 @@
           margin: auto 7px auto 4px;
           width: 13px;
           height: 13px;
-          background-image: url('./icons/icong.png');
+          background-image: url('~@/assets/icons/icong.png');
         }
 
         &::after {
@@ -196,7 +208,7 @@
           margin: auto 0 auto auto;
           height: 6.6px;
           float: right;
-          background-image: url('./icons/content-point-sort-icon.png');
+          background-image: url('~@/assets/icons/content-point-sort-icon.png');
         }
       }
     }
@@ -205,39 +217,14 @@
       display: none;
     }
 
-    &-point {
-      &-icon {
-        .iconDefault();
-        width: 8px;
-        height: 17px;
-        margin-right: 5px;
-        background-image: url('./icons/content-point-icon.png');
-      }
-
-      &-title {
-        color: @color3;
-        font-size: 14px;
-      }
-
-      &-line {
-        border: none;
-        background-color: @color4;
-        height: 2px;
-      }
-
-      &-sort {
-        .iconDefault();
-        width: 8px;
-        height: 17px;
-        margin-right: 5px;
-        background-image: url('./icons/content-point-sort.png');
-      }
-    }
-
     &-line {
       border: none;
       background-color: @color4;
       height: 2px;
+    }
+
+    p > .content-img {
+      margin-bottom: 0;
     }
 
     img {

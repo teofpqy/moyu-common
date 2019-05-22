@@ -2,11 +2,12 @@
   "name": "moyu-common",
   "version": "0.0.9",
   "description": "some common component for moyu.",
-  "main": "lib/**",
-  "module": "es/**",
+  "module": "./lib/index.js",
+  "typings": "./dist",
   "files": [
     "es",
-    "lib"
+    "lib",
+    "index.js"
   ],
   "authors": {
     "name": "panqingyi",

@@ -19,7 +19,11 @@ class Content extends PureComponent<ContentProps> {
     result = result.replace(subtitle, val => {
       return `<h4 class="content-subtitle-mark"></h4>${val}`;
     });
-    result += '<h4 class="content-subtitle-mark"></h4>';
+    const h3Title = new RegExp(/<h3 class="content-title">([\s\S]*?)<\/h3>/g);
+
+    result = result.replace(h3Title, val => {
+      return `<h4 class="content-subtitle-mark"></h4>${val}`;
+    });
     const h4Content = new RegExp(
       /<h4 class="content-subtitle">([\s\S]*?)<\/h4>([\s\S]*?)<h4 class="content-subtitle-mark">/g,
     );
@@ -42,10 +46,9 @@ class Content extends PureComponent<ContentProps> {
     );
 
     // 去除正文的空行（只有空行）
-    result = result.replace(
-      new RegExp('<p class="content-text">&nbsp;</p>', 'g'),
-      '<p class="content-text"></p>',
-    );
+    result = result.replace(/<p class="content-text">\s<\/p>/g, '');
+    result = result.replace(/<p>\s<\/p>/g, '');
+    result = result.replace(/<p class="content-text"><\/p>/g, '');
 
     return result;
   };
